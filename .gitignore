@@ -1,2 +1,7 @@
+# don't push virtual environment for Python
 venv/
-samples/
+
+# don't push audio files
+samples/clean_audio.wav
+samples/filtered_audio.wav
+samples/noisy_audio.wav
