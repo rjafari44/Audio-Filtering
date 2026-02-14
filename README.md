@@ -20,7 +20,7 @@ A Python project demonstrating high-frequency noise reduction in audio signals u
 ## Introduction
 High-frequency noise in audio recordings can reduce clarity and impact human perception, speech recognition, radio astronomy, and other scientific measurements. Learning to filter such noise while preserving signal integrity is very crucial in solving these problems.
 
-This project demonstrates a simple approach for generating, analyzing, and reducing high-frequency noise in audio signals using Python libraries. This project was done on Linux.
+This project demonstrates a simple approach for generating, analyzing, and reducing high-frequency noise in audio signals using Python libraries. This project was done on Linux and the audio used for analysis is a short, couple-second recording of me speaking. Audio samples are not included, so please provide your own .wav files to run the script.
 
 ---
 
