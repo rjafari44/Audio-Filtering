@@ -32,8 +32,8 @@ signal_noisy = np.clip(signal_noisy, -1.0, 1.0) # clip the noisy signal to [-1, 
 sf.write('samples/noisy_audio.wav', signal_noisy, sample_rate)
 print("Noisy audio saved as 'noisy_audio.wav'")
 
-# =============== TIME DOMAIN PLOT: CLEAN VS NOISY ===============
-# create a new figure for plotting time domain plot of clean vs noisy signal (side-by-side)
+# =============== TIME-DOMAIN PLOT: CLEAN VS NOISY ===============
+# create a new figure for plotting time-domain plot of clean vs noisy signal (side-by-side)
 plt.figure(figsize=(14, 4))  # create a new figure window with specified size
 
 # left subplot: clean signal
@@ -56,7 +56,7 @@ plt.grid(True)  # enable grid
 plt.tight_layout()  # automatically adjust spacing between subplots
 plt.savefig("assets/time_domain_clean_vs_noisy.png")  # save figure as PNG file
 plt.close()  # close figure to free memory
-print("Time-domain side-by-side plot (clean vs noisy) saved as PNG")
+print("Time-domain side by side plot (clean vs noisy) saved as PNG")
 # ===========================================================================================
 
 # compute FFTs of clean and noisy signals
@@ -65,8 +65,8 @@ fft_noisy = np.fft.fft(signal_noisy)
 
 freqs = np.fft.fftfreq(len(signal_noisy), 1/sample_rate) # Compute frequency values for each FFT bin
 
-# =============== FREQUENCY DOMAIN PLOT: CLEAN VS NOISY ===============
-# create a figure for plotting the frequency domain of clean vs noisy signal (side-by-side)
+# =============== FREQUENCY-DOMAIN PLOT: CLEAN VS NOISY ===============
+# create a figure for plotting the frequency-domain of clean vs noisy signal (side-by-side)
 plt.figure(figsize=(14, 4))  # create new figure for frequency plots
 
 # left subplot: clean spectrum in dB
@@ -87,10 +87,10 @@ plt.grid(True)  # enable grid
 plt.tight_layout()  # adjust subplot spacing
 plt.savefig("assets/frequency_domain_clean_vs_noisy.png")  # save frequency comparison
 plt.close()  # close figure
-print("Frequency-domain side-by-side plot (clean vs noisy) saved as PNG")
+print("Frequency-domain side by side plot (clean vs noisy) saved as PNG")
 # ===========================================================================================
 
-# applying moving average LTI low pass filter
+# applying moving average LTI low-pass filter
 N = 5            # filter length (number of samples to average), higher = more high frequency attenuation
 h = np.ones(N)/N # impulse response of moving-average filter; h[n] = 1/N for n = 0, 1, ..., N-1
 
@@ -101,8 +101,8 @@ signal_filtered = np.clip(signal_filtered, -1.0, 1.0)
 sf.write('samples/filtered_audio.wav', signal_filtered, sample_rate)
 print("Filtered audio saved as 'filtered_audio.wav'")
 
-# =============== TIME DOMAIN PLOT: CLEAN VS FILTERED ===============
-# create a new figure for plotting time domain plot of clean vs filtered signal (side-by-side)
+# =============== TIME-DOMAIN PLOT: CLEAN VS FILTERED ===============
+# create a new figure for plotting time-domain plot of clean vs filtered signal (side-by-side)
 plt.figure(figsize=(14, 4))  # create new figure
 
 # left subplot: clean signal
@@ -125,13 +125,13 @@ plt.grid(True)  # enable grid
 plt.tight_layout()  # adjust spacing
 plt.savefig("assets/time_domain_clean_vs_filtered.png")  # save figure
 plt.close()  # close figure
-print("Time-domain side-by-side plot (clean vs filtered) saved as PNG")
+print("Time-domain side by side plot (clean vs filtered) saved as PNG")
 # ===========================================================================================
 
 fft_filtered = np.fft.fft(signal_filtered) # FFT of filtered signal
 
-# =============== FREQUENCY DOMAIN PLOT: CLEAN VS FILTERED ===============
-# create a figure for plotting the frequency domain of clean vs filtered signal (side-by-side)
+# =============== FREQUENCY-DOMAIN PLOT: CLEAN VS FILTERED ===============
+# create a figure for plotting the frequency-domain of clean vs filtered signal (side-by-side)
 plt.figure(figsize=(14, 4))  # create new figure
 
 # left subplot: clean spectrum in dB
@@ -152,8 +152,8 @@ plt.grid(True)  # enable grid
 plt.tight_layout()  # adjust subplot spacing
 plt.savefig("assets/frequency_domain_clean_vs_filtered.png")  # save frequency comparison
 plt.close()  # close figure
-print("Frequency-domain side-by-side plot (clean vs filtered) saved as PNG")
+print("Frequency-domain side by side plot (clean vs filtered) saved as PNG")
 # ===========================================================================================
 
 # done
-print("All processing complete.")
+print("All processing complete!")
