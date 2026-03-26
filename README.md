@@ -12,8 +12,9 @@ A Python project demonstrating high-frequency noise reduction in audio signals u
 5. [Methodology](#methodology)
 6. [Parameters](#parameters)
 7. [Objectives](#objectives)
-8. [Usage](#usage)
-9. [Results](#results)
+8. [Dependencies](#dependencies)
+9. [Usage](#usage)
+10. [Results](#results)
 
 ---
 
@@ -99,10 +100,20 @@ The output signal ( y[n] ) is obtained by convolution:
 
 ---
 
+## Dependencies
+
+Install with pip inside your virtual environment:
+```bash
+pip install matplotlib numpy scipy soundfile
+```
+
+No specific Python version is required — Python 3.8 or newer works fine.
+
+---
+
 ## Usage
 1. Place your clean audio sample in `samples/clean_audio.wav`.
 2. Run the Python script:
-
 ```bash
 python3 audio_noise_filtering.py
 ```
