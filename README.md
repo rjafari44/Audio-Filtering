@@ -113,9 +113,9 @@ No specific Python version is required — Python 3.8 or newer works fine.
 
 ## Usage
 1. Place your clean audio sample in `samples/clean_audio.wav`.
-2. Run the Python script:
+2. Run the shell script:
 ```bash
-python3 audio_noise_filtering.py
+./run.sh
 ```
 
 ---

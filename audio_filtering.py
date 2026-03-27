@@ -54,7 +54,7 @@ plt.ylim(-1.0, 1.0)  # keep same amplitude limits
 plt.grid(True)  # enable grid
 
 plt.tight_layout()  # automatically adjust spacing between subplots
-plt.savefig("assets/time_domain_clean_vs_noisy.png")  # save figure as PNG file
+plt.savefig("assets/time-domain-clean-vs-noisy.png")  # save figure as PNG file
 plt.close()  # close figure to free memory
 print("Time-domain side by side plot (clean vs noisy) saved as PNG")
 # ===========================================================================================
@@ -85,7 +85,7 @@ plt.xlabel("Frequency (Hz)")  # label x-axis
 plt.grid(True)  # enable grid
 
 plt.tight_layout()  # adjust subplot spacing
-plt.savefig("assets/frequency_domain_clean_vs_noisy.png")  # save frequency comparison
+plt.savefig("assets/frequency-domain-clean-vs-noisy.png")  # save frequency comparison
 plt.close()  # close figure
 print("Frequency-domain side by side plot (clean vs noisy) saved as PNG")
 # ===========================================================================================
@@ -123,7 +123,7 @@ plt.ylim(-1.0, 1.0)  # same y-axis limits
 plt.grid(True)  # enable grid
 
 plt.tight_layout()  # adjust spacing
-plt.savefig("assets/time_domain_clean_vs_filtered.png")  # save figure
+plt.savefig("assets/time-domain-clean-vs-filtered.png")  # save figure
 plt.close()  # close figure
 print("Time-domain side by side plot (clean vs filtered) saved as PNG")
 # ===========================================================================================
@@ -150,7 +150,7 @@ plt.xlabel("Frequency (Hz)")  # label x-axis
 plt.grid(True)  # enable grid
 
 plt.tight_layout()  # adjust subplot spacing
-plt.savefig("assets/frequency_domain_clean_vs_filtered.png")  # save frequency comparison
+plt.savefig("assets/frequency-domain-clean-vs-filtered.png")  # save frequency comparison
 plt.close()  # close figure
 print("Frequency-domain side by side plot (clean vs filtered) saved as PNG")
 # ===========================================================================================
