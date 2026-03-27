@@ -49,7 +49,7 @@ The output signal ( y[n] ) is obtained by convolution:
 
 <br>
 
-![Diagram](assets/LTI-System-block-diagram.png)
+![Diagram](assets/system-block-diagram.png)
 
 ---
 
